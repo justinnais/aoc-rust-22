@@ -205,7 +205,7 @@ mod tests {
         assert_eq!(find_shape_to_play(&guide), Shape::Scissors);
 
         let guide = Guide::new(Shape::Rock, GameResult::Loss);
-        assert_eq!(find_shape_to_play(&guide), Shape::Scissors); // BROKEN
+        assert_eq!(find_shape_to_play(&guide), Shape::Scissors);
 
         let guide = Guide::new(Shape::Paper, GameResult::Win);
         assert_eq!(find_shape_to_play(&guide), Shape::Scissors);
